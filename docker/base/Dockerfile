@@ -6,7 +6,7 @@ MAINTAINER Spiro Sideris <spirosideris@gmail.com>
 # Update the system and install required packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        python3.5-dev \
+        python3-dev \
         python3-pip \
         sudo \
         cron \
@@ -20,8 +20,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and install required Python packages
-RUN python3.5 -m pip install --no-cache-dir --upgrade pip && \
-    python3.5 -m pip install --no-cache-dir \
+RUN python3 -m pip install --no-cache-dir --upgrade pip && \
+    python3 -m pip install --no-cache-dir \
         'luigi==2.4.0' \
         'sqlalchemy==1.1.0' \
         'psycopg2==2.6.2'
