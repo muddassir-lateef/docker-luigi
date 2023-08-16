@@ -1,5 +1,5 @@
 # Base luigi Dockerfile with python3.5.2
-FROM python:3.5.2
+FROM python:latest
 MAINTAINER Spiro Sideris <spirosideris at gmail.com>
 
 # Run an update, create a luigi user with sudo permissions, and install
