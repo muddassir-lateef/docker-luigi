@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get -q update && \
     useradd --password NP --create-home --shell /bin/bash luigi && \
     apt-get install -q -y --no-install-recommends \
-        sudo cron python-dev libpq-dev build-essential \
+        sudo cron python3-dev libpq-dev build-essential \
         postgresql-client \
     && \
     echo "luigi ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
