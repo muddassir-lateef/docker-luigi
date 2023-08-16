@@ -24,7 +24,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     python3 -m pip install --no-cache-dir \
         'luigi==2.4.0' \
         'sqlalchemy==1.1.0' \
-        'psycopg2==2.6.2'
+        'psycopg2==2.9.1'
 
 RUN mkdir /etc/luigi && chmod -R a+rw /etc/luigi
 
